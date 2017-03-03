@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BQtest</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img alt="kappa" src="placeholder.png" style="max-width:56px; margin-top:-8px; max-height:38px;">
+                </a>
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#test">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="test">
+                    <ul class="nav navbar-nav">
+                        <li class="col-lg-2 col-md-2"><a href="od1">od1</a></li>
+                        <li class="col-lg-2 col-md-2"><a href="od2">od2</a></li>
+                        <li class="col-lg-2 col-md-2"><a href="od3">od3</a></li>
+                        <li class="col-lg-2 col-md-2"><a href="od1">od4</a></li>
+                        <li class="col-lg-2 col-md-2"><a href="od2">od5</a></li>
+                        <li class="col-lg-2 col-md-2"><a href="od3">od6</a></li>
+
+
+                    </ul>
+                    <form action="" class="navbar-right">
+
+                        <button type="submit" class="btn btn-primar navbar-btn" data-toggle="modal" data-target="#md1">zaloguj</button>
+                        <button type="submit" class="btn btn-primar navbar-btn">rejestracja</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Ordo Martellus</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="md1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Logowanie</h3>
+                        <div class="modal-body">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="login" />
+                                <input type="password" class="form-control" placeholder="hasło" />
+                                <button type="submit" class="btn btn-primary">zaloguj</button>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
