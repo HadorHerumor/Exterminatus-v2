@@ -50,8 +50,8 @@
                     </ul>
                     <form action="" class="navbar-right">
 
-                        <button type="submit" class="btn btn-primar navbar-btn" data-toggle="modal" data-target="#md1">zaloguj</button>
-                        <button type="submit" class="btn btn-primar navbar-btn">rejestracja</button>
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1">Zaloguj</button>
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md2">rejestracja</button>
                     </form>
                 </div>
             </div>
@@ -63,30 +63,50 @@
         </div>
     </div>
     <div class="container">
-        <div class="modal" id="md1">
-            <div class="modal-dialog">
+        <div class="modal fade" id="md1">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Logowanie</h3>
-                        <div class="modal-body">
-                            <form action="">
-                                <input type="text" class="form-control" placeholder="login" />
-                                <input type="password" class="form-control" placeholder="hasło" />
-                                <button type="submit" class="btn btn-primary">zaloguj</button>
-                            </form>
-
-                        </div>
-                        <div class="modal-footer">
-
-                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="login" />
+                            <input type="password" class="form-control" placeholder="hasło" />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Zaloguj</button>
+                        <a href="" class="btn btn-default" data-dismiss="modal">Wyjdź</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
+    <div class="container">
+        <div class="modal fade" id="md2">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Rejestracja</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="login" />
+                            <input type="password" class="form-control" placeholder="hasło" />
+                            <input type="text" class="form-control" placeholder="email" />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Zarejestruj</button>
+                        <a href="" class="btn btn-default" data-dismiss="modal">Wyjdź</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
