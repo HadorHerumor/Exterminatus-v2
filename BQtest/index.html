@@ -8,6 +8,11 @@
     <title>BQtest</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+        .nag {
+            top: 30px;
+            position: relative;
+        }
+
         .navbar .navbar-nav {
             display: inline-block;
             float: none;
@@ -17,6 +22,15 @@
         .navbar .navbar-collapse {
             text-align: center;
         }
+
+        @media screen and (min-width: 768px) {
+            .modal-dialog {
+                width: 700px;
+            }
+            .modal-md {
+                width: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -24,9 +38,8 @@
     <header>
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
             <div class="container">
-
                 <a class="navbar-brand" href="#">
-                    <img alt="kappa" src="placeholder.png" style="max-width:56px; margin-top:-8px; max-height:38px;">
+                    <img alt="kappa" src="logo1.png" style="max-width:56px; margin-top:-8px; max-height:38px;">
                 </a>
 
                 <div class="navbar-header">
@@ -57,28 +70,25 @@
             </div>
         </nav>
     </header>
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>Ordo Martellus</h1>
-        </div>
-    </div>
     <div class="container">
         <div class="modal fade" id="md1">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-md">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="background-color:  #4040bf;height:70px;">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Logowanie</h3>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" style="padding:10px 10px; ">
                         <form action="">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
                             <input type="text" class="form-control" placeholder="login" />
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open" style="padding:5px 5px;"></span> Password</label>
                             <input type="password" class="form-control" placeholder="hasło" />
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Zaloguj</button>
-                        <a href="" class="btn btn-default" data-dismiss="modal">Wyjdź</a>
+                    <div class="modal-footer" style="height:60px;">
+                        <button type="button " class="btn btn-primary ">Zaloguj</button>
+                        <a href=" " class="btn btn-default " data-dismiss="modal ">Wyjdź</a>
                     </div>
                 </div>
             </div>
@@ -86,9 +96,9 @@
     </div>
     <div class="container">
         <div class="modal fade" id="md2">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-md">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header ">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Rejestracja</h3>
                     </div>
@@ -107,7 +117,11 @@
             </div>
         </div>
     </div>
-
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1 class="nag">Ordo Martellus</h1>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
