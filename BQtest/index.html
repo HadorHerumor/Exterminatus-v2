@@ -19,6 +19,15 @@
             vertical-align: top;
         }
 
+        .navbar-brand {
+            background-image: url(logo2.png) !important;
+            background-image: url(logo1.png) !important;
+            position: absolute;
+            top: 1%;
+            display: block;
+            margin: 0 auto;
+        }
+
         .navbar .navbar-collapse {
             text-align: center;
         }
@@ -38,11 +47,34 @@
 
         .modal-header,
         h3 {
-            background-color: #5cb85c;
+            background-color: #2c2c2c;
             color: white !important;
             text-align: center;
             font-size: 30px;
+            border-radius: 6px 6px 0px 0px !important;
         }
+
+        .modal-body {
+            background-color: ;
+        }
+
+        .modal-footer {
+            background-color: ;
+        }
+
+        .btn-primary:focus {
+            background-color: #8064A2;
+            border-color: #8064A2;
+        }
+
+        .btn-primary {
+            background-color: #8064A2;
+            border-color: #8064A2;
+        }
+
+        .btn-default:focus {}
+
+        .btn-default {}
     </style>
 </head>
 
@@ -51,7 +83,6 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img alt="kappa" src="logo1.png" style="max-width:56px; margin-top:-8px; max-height:38px;">
                 </a>
 
                 <div class="navbar-header">
@@ -76,7 +107,7 @@
                     <form action="" class="navbar-right">
 
                         <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1">Zaloguj</button>
-                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md2">rejestracja</button>
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md2">Rejestracja</button>
                     </form>
                 </div>
             </div>
@@ -86,11 +117,12 @@
         <div class="modal fade" id="md1">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
-                    <div class="modal-header" style="height:70px;">
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Logowanie</h3>
                     </div>
-                    <div class="modal-body" style="padding:10px 10px; ">
+                    <div class="modal-body" style="padding:10px 10px ; ">
+                        <hr />
                         <form action="">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
                             <input type="text" class="form-control" placeholder="Username" />
@@ -118,6 +150,7 @@
                         <h3 class="modal-title">Rejestracja</h3>
                     </div>
                     <div class="modal-body">
+                        <hr />
                         <form action="">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
                             <input type="text" class="form-control" placeholder="Username" />
