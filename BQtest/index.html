@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BQtest</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/test.css" rel="stylesheet">
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         .nag {
             top: 30px;
             position: relative;
@@ -20,7 +26,6 @@
         }
 
         .navbar-brand {
-            background-image: url(logo2.png) !important;
             background-image: url(logo1.png) !important;
             position: absolute;
             top: 1%;
@@ -124,12 +129,12 @@
                     <div class="modal-body" style="padding:10px 10px ; ">
                         <hr />
                         <form action="">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                            <input type="text" class="form-control" placeholder="Username" />
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                            <input type="password" class="form-control" placeholder="Password" />
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Podaj login</label>
+                            <input type="text" class="form-control" placeholder="Login" />
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Podaj hasło</label>
+                            <input type="password" class="form-control" placeholder="Hasło" />
                             <div class="checkbox">
-                                <label><input type="checkbox" value="" checked>Remember me</label>
+                                <label><input type="checkbox" value="" checked>Zapamiętaj mnie</label>
                             </div>
                         </form>
                     </div>
@@ -171,6 +176,39 @@
             </div>
         </div>
     </div>
+    <header id="gal" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#gal" data-slide-to="0" class="active"></li>
+            <li data-target="#gal" data-slide-to="1"></li>
+            <li data-target="#gal" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url(bg.png);"></div>
+                <div class="carousel-caption">
+                    <h2>Ollanius Pius</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(logo1.png);"></div>
+                <div class="carousel-caption">
+                    <h2>dunno</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(placeholder.png);"></div>
+                <div class="carousel-caption">
+                    <h2>co się paczysz</h2>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#gal" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#gal" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
     <div class="jumbotron">
         <div class="container text-center">
             <h1 class="nag">Ordo Martellus</h1>
@@ -182,11 +220,11 @@
 
             <hr>
             <ul class="list-inline">
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#">cośtam</a></li>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">YouTube</a></li>
             </ul>
-            <p>&copy; Copyright @ 2017</p>
+            <p>&copy; Copyright 2017</p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
