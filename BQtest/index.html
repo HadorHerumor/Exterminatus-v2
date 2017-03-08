@@ -80,6 +80,10 @@
         .btn-default:focus {}
 
         .btn-default {}
+
+        .center {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -157,11 +161,11 @@
                     <div class="modal-body">
                         <hr />
                         <form action="">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                            <input type="text" class="form-control" placeholder="Username" />
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                            <input type="password" class="form-control" placeholder="Password" />
-                            <label for="psw"><span class="glyphicon glyphicon glyphicon-envelope"></span> Email</label>
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Podaj login</label>
+                            <input type="text" class="form-control" placeholder="login" />
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Podaj hasło</label>
+                            <input type="password" class="form-control" placeholder="Hasło" />
+                            <label for="psw"><span class="glyphicon glyphicon glyphicon-envelope"></span> Podaj email</label>
                             <input type="text" class="form-control" placeholder="Email" />
                         </form>
                         <div class="checkbox">
@@ -184,19 +188,19 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url(bg.png);"></div>
+                <div class="test1" style="background-image:url(bg.png);"></div>
                 <div class="carousel-caption">
                     <h2>Ollanius Pius</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url(logo1.png);"></div>
+                <div class="test1" style="background-image:url(logo1.png);"></div>
                 <div class="carousel-caption">
                     <h2>dunno</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url(placeholder.png);"></div>
+                <div class="test1" style="background-image:url(placeholder.png);"></div>
                 <div class="carousel-caption">
                     <h2>co się paczysz</h2>
                 </div>
@@ -214,8 +218,48 @@
             <h1 class="nag">Ordo Martellus</h1>
         </div>
     </div>
-    <footer>
+    <hr />
+    <div class="container">
+        <section>
+            <div class="page-header" id="formularz">
+                <h2 class="center">Skontaktuj się z nami</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="user-name" class="col-lg-2 control-label">Imię/Nick</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" id="username" placeholder="Podaj Imię/Nick">
+                            </div>
+                        </div>
+                        <!-- End form group -->
 
+                        <div class="form-group">
+                            <label for="user-email" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" id="usermail" placeholder="Podaj swój adress email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-message" class="col-lg-2 control-label">Wiadomość</label>
+                            <div class="col-lg-9">
+                                <textarea name="user-message" id="userwiad" class="form-control" cols="16" rows="6" placeholder="Podaj swoją wiadomość"></textarea>
+                            </div>
+                        </div>
+                        <!-- End form group -->
+
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-primary">Prześlij</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
         <div class="container text-center">
 
             <hr>
