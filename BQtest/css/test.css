@@ -80,12 +80,9 @@ html,
       text-align: center;
   }
 
-  .tl1 {
-      background-color: #732612;
-  }
-
   .opis {
       font-size: 25px !important;
+      color: white;
   }
 .carousel,
 .item,
@@ -104,4 +101,11 @@ html,
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+body.modal-open {
+overflow-y: scroll;
+padding-right: 0 !important;
+}
+.jumbotron{
+  background: rgba(45, 34, 567, 0.2)!important;
 }
