@@ -8,112 +8,15 @@
     <title>BQtest</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/test.css" rel="stylesheet">
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        .nag {
-            top: 30px;
-            position: relative;
-        }
-
-        .navbar .navbar-nav {
-            display: inline-block;
-            float: none;
-            vertical-align: top;
-        }
-
-        .navbar-brand {
-            background-image: url(logo1.png) !important;
-            position: absolute;
-            top: 1%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .navbar .navbar-collapse {
-            text-align: center;
-        }
-
-        @media screen and (min-width: 768px) {
-            .modal-dialog {
-                width: 700px;
-            }
-            .modal-md {
-                width: 320px;
-            }
-        }
-
-        .h3 {
-            text-align: center;
-        }
-
-        .modal-header,
-        h3 {
-            background-color: #2c2c2c;
-            color: white !important;
-            text-align: center;
-            font-size: 30px;
-            border-radius: 6px 6px 0px 0px !important;
-        }
-
-        .modal-body {
-            background-color: ;
-        }
-
-        .modal-footer {
-            background-color: ;
-        }
-
-        .btn-primary:focus {
-            background-color: #8064A2;
-            border-color: #8064A2;
-        }
-
-        .btn-primary {
-            background-color: #8064A2;
-            border-color: #8064A2;
-        }
-
-        .btn-primary:hover {
-            background-color: #8064A2;
-            border-color: #8064A2;
-        }
-
-        .btn-default:focus {}
-
-        .btn-default {}
-
-        .center {
-            text-align: center;
-        }
-
-        .span1 {
-            font-size: 30px;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .tl1 {
-            background-color: #732612;
-        }
-
-        .opis {
-            font-size: 20px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="logo2.png" style="max-width:50px;margin-top:-15px;">
+
                 </a>
 
                 <div class="navbar-header">
@@ -137,8 +40,9 @@
                     </ul>
                     <form action="" class="navbar-right">
 
-                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1">Zaloguj</button>
                         <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md2">Rejestracja</button>
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1" style="margin-right:6px;">Zaloguj</button>
+
                     </form>
                 </div>
             </div>
@@ -152,7 +56,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Logowanie</h3>
                     </div>
-                    <div class="modal-body" style="padding:10px 10px ; ">
+                    <div class="modal-body" style="padding:10px 10px;">
                         <hr />
                         <form action="">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> Podaj login</label>
@@ -242,7 +146,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6  col-lg-4 col-lg-offset-1">
-                    <img src="logo1.png" class="img-responsive" alt="image">
+                    <img src="logo2.png" class="img-responsive" alt="image" style="max-width:600px;">
                 </div>
                 <div class="col-sm-6 col-xs-12 col-lg-6">
                     <p class="opis"> We are Emperor's Finest, the Chosen Ones. We purge the galaxy of heretics and xenos. We provide wide range of services in Cleanse, Purge and Kill! Our greatest method of erasing heresy of this world is Exterminatus. You can watch it
@@ -257,7 +161,6 @@
 
         </section>
     </div>
-    <!-- End Container -->
     <div class="jumbotron">
         <div class="container text-center">
             <h1 class="nag">Ordo Martellus</h1>
@@ -278,8 +181,6 @@
                                 <input type="text" class="form-control" id="username" placeholder="Podaj Imię/Nick">
                             </div>
                         </div>
-                        <!-- End form group -->
-
                         <div class="form-group">
                             <label for="user-email" class="col-lg-2 control-label">Email</label>
                             <div class="col-lg-9">
@@ -292,8 +193,6 @@
                                 <textarea name="user-message" id="userwiad" class="form-control" cols="16" rows="6" placeholder="Podaj swoją wiadomość"></textarea>
                             </div>
                         </div>
-                        <!-- End form group -->
-
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
                                 <button type="submit" class="btn btn-primary">Prześlij</button>
