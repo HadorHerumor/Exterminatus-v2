@@ -22,13 +22,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse cbp-af-header">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="img/logo3.png" style="max-width:55px;margin-top:-16px;">
-
+                    <img alt="Brand" src="img/logo3.png">
                 </a>
-
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#test">
                     <span class="icon-bar"></span>
@@ -39,20 +37,16 @@
                 </div>
                 <div class="collapse navbar-collapse" id="test">
                     <ul class="nav navbar-nav">
-                        <li class="col-lg-2 col-md-2"><a href="http://bequicky.000webhostapp.com/logowanie.php">od1</a></li>
-                        <li class="col-lg-2 col-md-2"><a href="http://bequicky.000webhostapp.com/logowanie.php">od2</a></li>
-                        <li class="col-lg-2 col-md-2"><a href="http://bequicky.000webhostapp.com/logowanie.php">od3</a></li>
-                        <li class="col-lg-2 col-md-2"><a href="http://bequicky.000webhostapp.com/logowanie.php">od4</a></li>
-                        <li class="col-lg-2 col-md-2"><a href="http://bequicky.000webhostapp.com/logowanie.php">od5</a></li>
-                        <li class="col-lg-2 col-md-2"><a href="#footer">od66</a></li>
-
-
+                        <li><a href="http://bequicky.000webhostapp.com/logowanie.php">od1</a></li>
+                        <li><a href="http://bequicky.000webhostapp.com/logowanie.php">od2</a></li>
+                        <li><a href="http://bequicky.000webhostapp.com/logowanie.php">od3</a></li>
+                        <li><a href="http://bequicky.000webhostapp.com/logowanie.php">od4</a></li>
+                        <li><a href="http://bequicky.000webhostapp.com/logowanie.php">od5</a></li>
+                        <li><a href="#footer">od66</a></li>
                     </ul>
                     <form action="" class="navbar-right">
-
                         <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md2">Rejestracja</button>
-                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1" style="margin-right:6px;">Zaloguj</button>
-
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#md1">Zaloguj</button>
                     </form>
                 </div>
             </div>
@@ -176,28 +170,22 @@
             <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#screenshot-carousel" data-slide-to="1"></li>
                     <li data-target="#screenshot-carousel" data-slide-to="2"></li>
                     <li data-target="#screenshot-carousel" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
+                    <div class="item">
+                        <img class="test2" src="img/3.jpg" alt="Text of the image">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
                     <div class="item active">
-                        <img src="img/2.jpg" alt="Text of the image">
+                        <img class="test2" src="img/4.jpg" alt="Text of the image">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="img/3.jpg" alt="Text of the image">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/4.jpg" alt="Text of the image">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/1.png" alt="Text of the image">
+                        <img class="test2" src="img/1.png" alt="Text of the image">
                         <div class="carousel-caption">
                         </div>
                     </div>
@@ -212,10 +200,88 @@
             </div>
         </section>
     </div>
-
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1 class="nag">Ordo Malleus</h1>
+    <hr />
+    <div class="container">
+        <div class="panel-group" id="accordion">
+            <div class="faqHeader">FAQ</div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title ">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#faq1">pyt1</a>
+                    </h4>
+                </div>
+                <div id="faq1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Account registration at <strong>PrepBootstrap</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq2">pyt2</a>
+                    </h4>
+                </div>
+                <div id="faq2" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq3">pyt3</a>
+                    </h4>
+                </div>
+                <div id="faq3" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq4">pyt4</a>
+                    </h4>
+                </div>
+                <div id="faq4" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq5">pyt5</a>
+                    </h4>
+                </div>
+                <div id="faq5" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq6">pyt6</a>
+                    </h4>
+                </div>
+                <div id="faq6" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <hr />
@@ -272,9 +338,11 @@
     <script src="js/js.js"></script>
     <script>
         $('.carousel').carousel({
-            interval: 2000
+            interval: 5000
         })
     </script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 </body>
 
 </html>
